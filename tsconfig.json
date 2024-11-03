@@ -1,12 +1,9 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    /* Project Setup */
     "target": "ES2022",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react-native",
     "allowJs": true,
     "checkJs": true,
@@ -15,8 +12,12 @@
     "isolatedModules": true,
     "removeComments": true,
     "downlevelIteration": true,
+
+    /* Strict Type-Checking */
     "strict": true,
     "noUncheckedIndexedAccess": true,
+
+    /* Linter Checks */
     "noImplicitAny": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
@@ -24,6 +25,8 @@
     "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "useDefineForClassFields": true,
+
+    /* Module Resolution */
     "module": "esnext",
     "outDir": "./dist",
     "esModuleInterop": true,
@@ -33,12 +36,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@/assets/*": [
-        "./assets/*"
-      ]
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./assets/*"]
     }
   },
   "exclude": [
@@ -51,10 +50,5 @@
     "ios",
     "lint-staged.config.js"
   ],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }

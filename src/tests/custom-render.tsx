@@ -1,6 +1,5 @@
-import { PropsWithChildren, ReactElement } from 'react';
-
 import { render, RenderOptions } from '@testing-library/react-native';
+import { PropsWithChildren, ReactElement } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const AllProviders = ({ children }: PropsWithChildren) => {
